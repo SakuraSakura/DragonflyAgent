@@ -24,7 +24,7 @@ and store in `pspnet/models/` directory.
 
 ### Server Side (tested on Windows 10)
 
-1. Download pre-compiled Windows binary
+1. Download Dragonfly simulator
 [here](https://drive.google.com/open?id=1idzBbvPZXj-lQab8H29p00hGiYootIet)
 and unzip it.
 This folder should contains a `FlyingTest.exe` executable.
@@ -63,11 +63,17 @@ For example, to train A3C on 4 agents, you need to start 5 simulators
 ## Testing
 
 1. Download `best.pth`
-   [here](https://drive.google.com/open?id=1TSENceE5d_tVDXunMctU5bRp3ytJiWpF)
-   or you can use your own checkpoints.
+   [here](https://drive.google.com/open?id=1TSENceE5d_tVDXunMctU5bRp3ytJiWpF).
+   You can also use your own checkpoints.
 
 2. Run the testing scripts:
     ```shell
     python testing.py <path to model checkpoint>
     ```
    Results will be saved in `original.gif` and `segmented.gif`.
+
+## References
+
+* Dragonfly simulator: https://github.com/kuanting/dragonfly
+* PSPNet pytorch implementation: https://github.com/kazuto1011/pspnet-pytorch
+* A3C pytorch implementation: https://github.com/ikostrikov/pytorch-a3c
