@@ -9,7 +9,7 @@
 * msgpack-rpc-python
 * tensorboardX
 
-## Prepair Environment
+## Environment Settings
 
 ### Pre-trained PSPNet model
 
@@ -19,13 +19,13 @@ and store in `pspnet/models/` directory.
 
 ### Dragonfly drone simulator
 
-**Only Windows is supported**
+**NOTE: Only Windows is supported**
 
 Download pre-compiled Windows binary
 [here](https://github.com/kuanting/dragonfly).
 
 You may want to add a `settings.json` file at `FlyingTest/Config` to specify
-the port to use:
+the port to be used:
 ```json
 {
   "ApiServerPort": 16660
