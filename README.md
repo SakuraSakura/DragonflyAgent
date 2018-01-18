@@ -63,8 +63,8 @@ For example, to train A3C on 4 agents, you need to start 5 simulators
 ## Testing
 
 1. Download `best.pth`
-   [here](https://drive.google.com/open?id=1TSENceE5d_tVDXunMctU5bRp3ytJiWpF).
-   You can also use your own checkpoints.
+[here](https://drive.google.com/open?id=1TSENceE5d_tVDXunMctU5bRp3ytJiWpF).
+You can also use your own checkpoints.
 
 2. Run the testing scripts:
     ```shell
