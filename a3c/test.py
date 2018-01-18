@@ -34,7 +34,7 @@ def test(rank, args, shared_model, counter, lock):
     model.eval()
 
     current_time = datetime.now().strftime('%Y%m%d_%H%M%S')
-    run_id = current_time + '_noseg' if args.no_segmentation else ''
+    run_id = current_time + '_noseg' if args.no_segmentation else current_time
     writer = SummaryWriter(os.path.join('runs', run_id))
     checkpoint_saver = CheckpointSaver(os.path.join('checkpoints', run_id))
     episode = 0
