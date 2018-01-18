@@ -41,9 +41,8 @@ parser.add_argument('--start-id', type=int, default=0,
 
 
 if __name__ == '__main__':
-    os.environ['OMP_NUM_THREADS'] = '1'
-
     args = parser.parse_args()
+    mp.set_start_method('spawn', force=True)
 
     torch.manual_seed(args.seed)
     env = create_unreal_env(0, segmentation=not args.no_segmentation, fake=True)
@@ -59,7 +58,6 @@ if __name__ == '__main__':
 
     processes = []
 
-    mp.set_start_method('spawn')
     counter = mp.Value('i', 0)
     lock = mp.Lock()
 
